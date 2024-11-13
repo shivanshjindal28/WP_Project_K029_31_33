@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Accounts</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/accounts">Accounts</a>
+            <a href="/more">More</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Balance Summary -->
+        <section id="balance-summary">
+            <h2>Account Balance</h2>
+            <div class="balance-card">Total Income: ₹13,60,000</div>
+            <div class="balance-card">Total Expenses: ₹11,22,500</div>
+            <div class="balance-card">Net Balance: ₹2,37,500</div>
+        </section>
+
+        <!-- Transaction History -->
+        <section id="transaction-history">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2024-11-13</td><td>Tuition Fees</td><td>₹4,15,000</td><td>Expense</td></tr>
+                    <tr><td>2024-11-13</td><td>Transportation</td><td>₹3000</td><td>Expense</td></tr>
+                    <tr><td>2024-11-13</td><td>Food</td><td>₹4500</td><td>Expense</td></tr>
+                    <tr><td>2024-11-13</td><td>Salary</td><td>₹12,50,000</td><td>Income</td></tr>
+                    <tr><td>2024-11-13</td><td>Bonus</td><td>₹1,10,000</td><td>Income</td></tr>
+                    <tr><td>2024-11-13</td><td>Car</td><td>₹7,00,000</td><td>Expense</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div id="accounts">
+            <h2>Account Balances</h2>
+            <ul>
+                <li>Checking Account: ₹2,450.00</li>
+                <li>Savings Account: ₹5,320.00</li>
+                <li>Investment Account: ₹10,200.00</li>
+            </ul>
+        
+            <h2>Recent Transactions</h2>
+            <ul>
+                <li>Paid ₹10000 for groceries - Debit</li>
+                <li>Received ₹1,50,000 as salary - Credit</li>
+                <li>Paid ₹3000 for utilities - Debit</li>
+            </ul>
+        
+            <h2>Investment Growth</h2>
+            <div class="chart" id="investment-growth">
+                <img src="https://png.pngtree.com/png-vector/20240731/ourmid/pngtree-investment-graph-png-image_13317661.png" alt="Investment Growth Graph">
+            </div>
+        </div>
+        
+
+        <!-- Savings Goal Progress -->
+        <section id="savings-goal">
+            <h2>Savings Goal</h2>
+            <div id="goal-progress-bar">Goal Progress: 70%</div>
+        </section>
+    </main>
+</body>
+</html>

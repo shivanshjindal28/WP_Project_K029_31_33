@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/accounts">Accounts</a>
+            <a href="/more">More</a>
+        </nav>
+        <!-- Logo Image added -->
+        <img src="https://www.freeiconspng.com/uploads/money-icon-19.png" alt="Logo" id="logo">
+    </header>
+
+    <main>
+        <section id="tracker">
+            <h2>Track Your Expenses and Income</h2>
+            <form id="transaction-form">
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <input type="text" id="category" placeholder="Category" required>
+                <button type="submit">Add Transaction</button>
+            </form>
+            <div id="summary">
+                <h3>Balance Summary</h3>
+                <div id="total-income">Income: $0</div>
+                <div id="total-expense">Expense: $0</div>
+                <div id="net-value">Net: $0</div>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2>Investment Articles</h2>
+            <!-- Sample articles here -->
+            <article class="article">
+                <a href="https://www.investopedia.com/articles/basics/11/3-s-simple-investing.asp" target="_blank">
+                    <img src="https://c1.wallpaperflare.com/preview/321/38/339/finance-currency-business-money.jpg" alt="Investment Basics">
+                    <div class="article-content">
+                        <h3>Investment Basics</h3>
+                        <p>Learn about the fundamentals of investing...</p>
+                    </div>
+                </a>
+            </article>
+            <article class="article">
+                <a href="https://www.investopedia.com/terms/i/investmentstrategy.asp" target="_blank">
+                    <img src="https://oss-cms.aqumon.com/media%2Ffiler_public%2F62%2F92%2F62927fe6-6527-46e5-aeda-0f4a40b49555%2Fbanner_gaitubao_1200x600.jpg" alt="Investment Strategy">
+                    <div class="article-content">
+                        <h3>Investment Strategy</h3>
+                        <p>Discover the best strategies for investment...</p>
+                    </div>
+                </a>
+            </article>
+            <article class="article">
+                <a href="https://www.schwab.com/learn/story/stock-investment-tips-beginners" target="_blank">
+                    <img src="https://4kwallpapers.com/images/wallpapers/bear-bull-stock-3840x2160-13812.png" alt="Stock Market Tips">
+                    <div class="article-content">
+                        <h3>Stock Market Tips</h3>
+                        <p>Get tips for navigating the stock market...</p>
+                    </div>
+                </a>
+            </article>
+            <article class="article">
+                <a href="https://www.investopedia.com/cryptocurrency-4427699" target="_blank">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/1093474917/thumb/6.jpg?ip=x480" alt="Cryptocurrency Investments">
+                    <div class="article-content">
+                        <h3>Cryptocurrency Investments</h3>
+                        <p>Learn how to invest in cryptocurrency...</p>
+                    </div>
+                </a>
+            </article>
+            <article class="article">
+                <a href="https://www.investopedia.com/terms/r/retirement-planning.asp" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1494438043283-22a3c46831a4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmV0aXJlbWVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Retirement Planning">
+                    <div class="article-content">
+                        <h3>Retirement Planning</h3>
+                        <p>Prepare for your financial future...</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
